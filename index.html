@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body>
+	<div class="container dveri" style="margin-top: 120px;">	<!--двери-->
+		<img src="door.png" style="height: 400px; width: 250px; position: absolute;" class="otvet1">
+		<img src="door2.png" style="height: 400px; width: 250px; margin-left: 100px; position: absolute; margin-left: 300px;" class="otvet2">
+		<img src="door3.png" style="height: 400px; width: 250px;margin-left: 100px; position: absolute; margin-left: 600px;" class="otvet3">
+	</div>
+	<div style="background-image: url(bg.jpg); background-size: 100% 100%; height: 950px; display: none;" class="hogvars">		<!--хогварс-->
+		<p style="font-size: 30px; color: white;">найдите для гарри его вещи рабы! подсказка метлу (чтобы подметать) палочку (чтобы чистить туалет) мантию (чтобы стать КАК ЧЕРТОВ КАРОЛЬ!!!)</p>
+		<button class="btn btn-success exit" style="padding-left: 30px; padding-right: 30px; padding-top: 8px; padding-bottom: 8px;">Exit</button>
+		<img src="gun.png" style="height: 100px; width: 100px; margin-left: 100px; position: absolute;" class="gun">
+		<img src="metla.png" style="height: 100px; width: 100px; margin-left: 800px; margin-top: 700px; position: absolute;" class="metla">
+		<img src="mantiya.png" style="height: 100px; width: 100px; margin-top: 500px; position: absolute;" class="mantiya">
+		<img src="palochka.png" style="height: 100px; width: 100px; margin-left: 1000px; margin-bottom: 200px; position: absolute;" class="palochka">
+		<img src="ring.png" style="height: 100px; width: 100px; margin-left: 700px; margin-top: 400px; position: absolute;" class="ring">
+	</div>
+
+
+	<script type="text/javascript">
+		let ochki = 0;
+		let key1 = 1;
+		let key2 = 1;
+		let key3 = 1;
+
+
+
+
+
+		document.querySelector(".otvet1").onclick = function(){//двери
+			alert("кросава (как тебе такое Илон Маск)")
+			document.querySelector(".dveri").style.display = "none";
+			document.querySelector(".hogvars").style.display = "block";
+		}
+		document.querySelector(".otvet2").onclick = function(){
+			alert("noy")
+		}
+		document.querySelector(".otvet3").onclick = function(){
+			alert("nain")
+		}
+
+
+
+
+		document.querySelector(".metla").onclick = function(){//хогварс
+			document.querySelector(".metla").style.display = "none"
+			document.querySelector()
+		}
+		document.querySelector(".mantiya").onclick = function(){
+			document.querySelector(".mantiya").style.display = "none"
+		}
+		document.querySelector(".palochka").onclick = function(){
+			document.querySelector(".palochka").style.display = "none"
+		}
+
+
+
+		document.querySelector(".exit").onclick = function(){//выход
+			document.querySelector(".hogvars").style.display = "none"
+			document.querySelector(".dveri").style.display = "block"
+		}
+	</script>
+</body>
+</html>
